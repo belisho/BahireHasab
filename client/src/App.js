@@ -1,9 +1,10 @@
-// import logo from './logo.svg';
-// import { useState } from 'react';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home.jsx'
+import { useState } from 'react';
+
 function App() {
+  const [count, setCount]= useState(0)
   return (
     <div>
       <BrowserRouter>
